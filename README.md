@@ -97,10 +97,6 @@ docker run -v path/to/input:/app/input --rm --name chacha_container chachat
 
 The output of the main.py script will be displayed in the terminal, showing the contents of all files in the input folder, including any files added after the container started.
 
-## Note
-
-The COPY command in the Dockerfile copies the initial contents of the input folder at the time of image build. However, the volume mount specified in docker-compose.yaml ensures that the container uses the current state of the input folder on your host machine.
-
 ## Conclusion
 
 This setup demonstrates a powerful feature of Docker, where you can update the contents of a directory in a running container without needing to rebuild the image. This is particularly useful for development environments, where you need to reflect changes made to files on the fly.
