@@ -1,0 +1,7 @@
+version: "3.9"
+
+services:
+  chacha:
+    build: . # Compile l'image
+    volumes:
+      - ./input/:/app/input/
