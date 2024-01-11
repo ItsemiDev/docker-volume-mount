@@ -14,15 +14,15 @@ So when you are working on files that are on your local machine, you are not for
 
 Your project should have the following files:
 
-- main.py: Python script to read files.
-- Dockerfile: Instructions to build the Docker image.
-- docker-compose.yaml: Configuration for Docker Compose.
+- _main.py_: Python script to read files.
+- _Dockerfile_: Instructions to build the Docker image.
+- _docker-compose.yaml_: Configuration for Docker Compose.
 
 ## Files Overview
 
-1. main.py: Reads and prints the contents of all files in the input folder.
+1. _main.py_: Reads and prints the contents of all files in the input folder.
 
-2. Dockerfile:
+2. _Dockerfile_:
 
    - Uses python:3.9.6-slim-buster as the base image.
    - Sets /app as the working directory.
@@ -30,7 +30,7 @@ Your project should have the following files:
    - Create the input directory in the build context.
    - Sets the command to run main.py.
 
-3. docker-compose.yaml:
+3. _docker-compose.yaml_:
    - Defines a service named chacha.
    - Builds the Docker image from the current directory.
    - Mounts the input folder from your local machine to /app/input in the container.
